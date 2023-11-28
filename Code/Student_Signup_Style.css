@@ -1,0 +1,102 @@
+﻿body {
+    background-color: rgb(0, 0, 0);
+    background-image: url("Images/Student_Signup_BG.jpg");
+    background-repeat: no-repeat;
+    background-size:90em;
+}
+.label {
+    color: rgb(255, 255, 255);
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 1.3em;
+    font-weight:lighter;
+    /*padding:1.2em;*/
+}
+.text {
+    /*padding:1.2em;*/
+    border: none;
+    border-bottom: 0.2em solid rgb(139, 139, 139);
+    background: none !important;
+    color: white;
+    border-radius: 0.6em;
+    padding: 0.8em;
+    margin-left: 1.5em;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: lighter;
+}
+    .text:hover {
+        border-bottom-color: rgb(19, 65, 1);
+    }
+
+    .text:focus {
+        border-bottom-color: rgb(104, 255, 0);
+        border-bottom-style: solid;
+        outline: none;
+    }
+
+#btnSignup {
+    border: 0.15em hidden #FFFFFF;
+    border-right: 0.15em solid rgb(104, 255, 0);
+    border-left: 0.15em solid rgb(104, 255, 0);
+    padding: 0.7em 2.5em;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: lighter;
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 0.4em;
+    background-color: rgba(255, 255, 255, 0.00);
+    color: rgb(139, 139, 139);
+    margin-left:45em;
+}
+
+    #btnSignup:hover {
+        border-top: 0.15em solid rgb(19, 65, 1);
+        border-bottom: 0.15em solid rgb(19, 65, 1);
+    }
+
+    #btnSignup:focus {
+        color: #FFFFFF;
+        border-top: 0.15em solid rgb(104, 255, 0);
+        border-bottom: 0.15em solid rgb(104, 255, 0);
+        outline: none;
+    }
+
+.valid {
+    font-family: 'Microsoft JhengHei UI';
+    margin-left: 1.4em;
+    font-size: 0.85em;
+}
+#ddlTechnology {
+    font-family:'Microsoft JhengHei UI';
+    color: rgb(139, 139, 139);
+    margin: 0.5em 0em 1.8em 0em;
+    margin-left:1.5em;
+    padding: 0.6em 4em;
+    border-radius: 0.3em;
+    border: none;
+    /*background-color: rgba(104, 255, 0, 0.10);
+    border-top: 0.1em solid rgb(104, 255, 0);
+    border-bottom: 0.1em solid rgb(104, 255, 0);*/
+    background-color: rgba(139, 139, 139, 0.10) !important;
+    border-top: 0.1em solid rgb(139, 139, 139);
+    border-bottom: 0.1em solid rgb(139, 139, 139);
+}
+    #ddlTechnology:hover {
+        color: rgb(19, 65, 1);
+        background-color: rgba(19, 65, 1, 0.10);
+        border-top: 0.1em solid rgb(19, 65, 1);
+        border-bottom: 0.1em solid rgb(19, 65, 1);
+    }
+    #ddlTechnology:focus {
+        color: rgb(104, 255, 0);
+        outline: none;
+        background-color: rgba(104, 255, 0, 0.10);
+        border-bottom-color: rgb(104, 255, 0);
+        border-top-color: rgb(104, 255, 0);
+    }
+#tblStudentSignup {
+    margin-left: 25em;
+    margin-top: 2em;
+    /*height: 393px;
+    width: 765px;*/
+}

@@ -1,0 +1,132 @@
+﻿body {
+}
+
+.lbl {
+    font-family: 'Microsoft JhengHei UI';
+    color: white;
+    margin: 2em;
+}
+
+.con {
+    /*float:left;*/
+    margin-top:6em;
+}
+
+.txt {
+    margin: 2em;
+    border: none;
+    border-bottom: 0.2em solid rgb(139, 139, 139);
+    background: none !important;
+    color: white;
+    border-radius: 0.6em;
+    padding: 0.5em;
+    margin-left: 1em;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: lighter;
+}
+
+    .txt:hover {
+        border-bottom-color: rgb(60, 57, 1);
+    }
+
+    .txt:focus {
+        border-bottom-color: rgb(255, 242, 0); /*rgb(104, 255, 0);*/
+        border-bottom-style: solid;
+        outline: none;
+    }
+
+.btn, .btn2 {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: 0.15em solid rgb(255, 242, 0);
+    border-left: 0.15em solid rgb(255, 242, 0);
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 0.4em;
+    color: rgb(139, 139, 139);
+    font-family: 'Microsoft JhengHei UI';
+    background-color: rgba(255,255,255,0.15);
+}
+
+    .btn:hover, .btn2:hover {
+        background-color: rgba(255, 242, 0, 0.3);
+    }
+
+    .btn:focus, .btn2:focus {
+        background-color: rgb(255, 242, 0);
+        outline: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+.btn {
+    margin-left: 54.33em;
+}
+
+.btn2 {
+    /*margin-left: 59.9em;*/
+    font-size: 1.1em;
+    position:absolute;
+    float:right;
+    bottom: 5.5em;
+    right: 6.45em;
+}
+
+.ddl {
+    font-family: 'Microsoft JhengHei UI';
+    color: rgb(139, 139, 139);
+    margin: 0.5em 0em 1.8em 0em;
+    margin-left: 1.5em;
+    padding: 0.6em 4em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: rgba(139, 139, 139, 0.10) !important;
+    border-top: 0.1em solid rgb(139, 139, 139);
+    border-bottom: 0.1em solid rgb(139, 139, 139);
+}
+
+    .ddl:hover {
+        color: rgb(87, 82, 0);
+        background-color: rgba(87, 82, 0, 0.10);
+        border-top: 0.1em solid rgb(87, 82, 0);
+        border-bottom: 0.1em solid rgb(87, 82, 0);
+    }
+
+    .ddl:focus {
+        color: rgb(255, 242, 0);
+        outline: none;
+        background-color: rgba(255, 242, 0, 0.10);
+        border-bottom-color: rgb(255, 242, 0);
+        border-top-color: rgb(255, 242, 0);
+    }
+
+.v {
+    font-family: 'Microsoft JhengHei UI';
+    margin-left: 52em;
+    color: #fff200;
+}
+
+.cb {
+    margin-left: 54em;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 1.1em;
+    color: rgb(178, 178, 178);
+    padding: 0.7em;
+    border: rgb(139, 139, 139);
+    background-color: rgba(139, 139, 139, 0.1);
+    border-radius: 0.34em;
+}
+
+    .cb:hover, .cb:active, .cb:focus {
+        color: black;
+        background-color: rgba(255, 242, 0, 0.75);
+    }
+
+.clearAll {
+    margin-top: 2em;
+    margin-left: 2em;
+    float:left;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}

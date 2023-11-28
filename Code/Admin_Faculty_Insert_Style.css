@@ -1,0 +1,117 @@
+﻿body {
+}
+
+.tab {
+    margin-top: 5em;
+}
+
+.label, .label2 {
+    color: white;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 1em;
+    font-weight: lighter;
+    padding: 0.9em;
+}
+
+.con {
+    float:left;
+    margin-top: 6em;
+    margin-left: 4.8em;
+}
+
+.label2 {
+    margin-left: 6.2em;
+}
+
+.label {
+    margin-left: 0.7em;
+}
+
+.label, .label2, .text {
+    margin-top: 3em;
+}
+/*#lblFirstName, #lblFirstNameSeperator, #txtFirstName, #lblLastName, #lblLastNameSeperator, #txtLastName {
+    margin-top:2em;
+}*/
+.text {
+    border: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-weight: lighter;
+    font-family: 'Microsoft JhengHei UI';
+    color: white;
+    border-bottom: 0.2em solid rgb(139,139,139);
+    border-radius: 0.6em;
+    padding-left: 0.4em;
+    padding-left: 0.4em;
+}
+
+    .text:hover {
+        border-bottom-color: rgb(60,57,1);
+    }
+
+    .text:focus {
+        border-bottom-color: rgb(255, 242, 0);
+        outline: none;
+    }
+
+.btn {
+    margin-left: 24em;
+    margin-top: 1.7em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-right: 0.15em solid rgb(255, 242, 0);
+    border-left: 0.15em solid rgb(255, 242, 0);
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 0.4em;
+    color: rgb(139, 139, 139);
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 1.35em;
+    background-color: rgba(255,255,255,0.15);
+}
+
+    .btn:hover {
+        background-color: rgba(255, 242, 0, 0.4);
+    }
+
+    .btn:focus {
+        background-color: rgb(255, 242, 0);
+        outline: none;
+        color: black;
+        font-weight:bolder;
+    }
+
+.ddl {
+    font-family: 'Microsoft JhengHei UI';
+    color: rgb(139, 139, 139);
+    /*margin: 0.5em 0em 1.8em 0em;*/
+    margin-left: 0em;
+    margin-top: 2em;
+    padding: 0.6em 4em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: rgba(139, 139, 139, 0.10) !important;
+    border-top: 0.1em solid rgb(139, 139, 139);
+    border-bottom: 0.1em solid rgb(139, 139, 139);
+}
+
+    .ddl:hover {
+        color: rgb(87, 82, 0);
+        background-color: rgba(87, 82, 0, 0.10);
+        border-top: 0.1em solid rgb(87, 82, 0);
+        border-bottom: 0.1em solid rgb(87, 82, 0);
+    }
+
+    .ddl:focus {
+        color: rgb(255, 242, 0);
+        outline: none;
+        background-color: rgba(255, 242, 0, 0.10);
+        border-bottom-color: rgb(255, 242, 0);
+        border-top-color: rgb(255, 242, 0);
+    }
+
+.valid {
+    font-family: 'Microsoft JhengHei UI';
+    color: #fff200;
+}

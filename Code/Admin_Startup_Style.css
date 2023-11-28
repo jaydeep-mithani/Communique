@@ -1,0 +1,71 @@
+﻿body {
+ 
+}
+.mstStartup{
+    height:32.0em;
+}
+.wl, .wlA {
+    /*margin-top:2em;
+    margin-left:2.25em;*/
+    float: left;
+    left: 10em;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 5em;
+    color: white;
+    font-weight: lighter;
+    text-shadow: 0.1em 0.1em 0.35em rgba(255, 242, 0, 1);
+}
+.wl {
+    margin-top: 0.9em;
+    margin-left: 2.8em;
+    font-size: 7em;
+}
+.wlA {
+    margin-left: 1.7em;
+}
+#lblAP {
+    margin-left: 0.5em;
+}
+.item-animate{
+    margin-top: 2em;
+    /*background-color:aqua;*/
+    float:left;
+}
+.SC, .FC {
+    margin-top: 15em;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 7em;
+    color: white;
+    margin-right: 0.18em;
+}
+.S, .F {
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 4em;
+    color: white;
+    font-weight: lighter;
+}
+.seperate {
+    margin-right:31em;
+}
+.gap {
+    margin-left: 3em;
+}
+.linkStu, .linkFac {
+    text-decoration: none;
+    transition: text-shadow 0.3s ease;
+}
+    .linkStu:hover, .linkFac:hover {
+        text-shadow: 0.2em 0.2em 1em rgba(255, 242, 0, 1);
+    }
+/*.F, .FC, .S, .SC {
+    transition: text-shadow 0.3s ease;
+}
+    .F:hover, .FC:hover, .S:hover, .SC:hover {
+        text-shadow: 0.1em 0.1em 0.35em rgba(255, 242, 0, 1);
+    }
+    .F > .FC:hover {
+        text-shadow: 0.1em 0.1em 0.35em rgba(255, 242, 0, 1);
+    }
+        .FC:hover ~ .F {
+            text-shadow: 0.1em 0.1em 0.35em rgba(255, 242, 0, 1);
+        }*/
