@@ -1,0 +1,465 @@
+﻿html {
+    background-color: rgb(0, 59, 51);
+    cursor: url(Images/HomeWF.png), auto;
+    background-image: url("Images/Faculty_Signup_BG2.jpg");
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: 100% 150%;
+    background-attachment: fixed;
+}
+body {
+    /*background-color: rgb(0, 0, 0);
+    background-image: url("Images/Faculty_Signup_BG.jpg");
+    background-repeat: no-repeat;
+    height: 85%;
+    width: 98%;*/
+}
+#hFTitle {
+    color: white;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight:lighter;
+    font-size: 3.5em;
+    /*margin-left: 8em;*/
+    width: 814px;
+}
+.lbl {
+    color: rgb(255, 255, 255);
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 1.1em;
+}
+.txtField {
+    border: none;
+    border-bottom: 0.2em solid rgb(139, 139, 139);
+    background: none !important;
+    color: white;
+    border-radius: 0.6em;
+    padding: 0.5em;
+    /*margin-left: 1em;*/
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: lighter;
+}
+    .txtField:hover {
+        border-bottom-color: rgb(0, 64, 57);
+    }
+
+    .txtField:focus {
+        border-bottom-color: rgb(0, 255, 224); /*rgb(104, 255, 0);*/
+        border-bottom-style: solid;
+        outline: none;
+    }
+#btnFAdminLogin {
+    /*margin-left: 11.5em;
+    margin-right: 1em;*/
+    border-right: 0.15em solid rgb(255, 242, 0);
+    border-left: 0.15em solid rgb(255, 242, 0);
+}
+
+    #btnFAdminLogin:hover {
+        border-top: 0.15em solid rgb(60, 57, 1);
+        border-bottom: 0.15em solid rgb(60, 57, 1);
+    }
+
+    #btnFAdminLogin:focus {
+        color: #FFFFFF;
+        border-top: 0.15em solid rgb(255, 242, 0);
+        border-bottom: 0.15em solid rgb(255, 242, 0);
+    }
+#btnFStudentLogin {
+    /*margin-left: 20.5em;*/
+    border-right: 0.15em solid rgb(104, 255, 0);
+    border-left: 0.15em solid rgb(104, 255, 0);
+}
+    #btnFStudentLogin:hover {
+        border-top: 0.15em solid rgb(19, 65, 1);
+        border-bottom: 0.15em solid rgb(19, 65, 1);
+    }
+
+    #btnFStudentLogin:focus {
+        color: #FFFFFF;
+        border-top: 0.15em solid rgb(104, 255, 0);
+        border-bottom: 0.15em solid rgb(104, 255, 0);
+    }
+#btnFLogin {
+    /*margin-left: 43em;*/
+    border-right: 0.15em solid rgb(0, 255, 224);
+    border-left: 0.15em solid rgb(0, 255, 224);
+    padding: 0.7em 2.5em;
+    font-family: 'Microsoft JhengHei UI';
+    font-weight: lighter;
+}
+    #btnFLogin:hover {
+        border-top: 0.15em solid rgb(0, 64, 57);
+        border-bottom: 0.15em solid rgb(0, 64, 57);
+    }
+
+    #btnFLogin:focus {
+        color: #FFFFFF;
+        border-top: 0.15em solid rgb(0, 255, 224);
+        border-bottom: 0.15em solid rgb(0, 255, 224);
+    }
+.btns {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 0.4em;
+    background-color: rgba(255, 255, 255, 0.00);
+    border: 0.15em hidden #FFFFFF;
+    color: rgb(139, 139, 139);
+}
+
+    .btns:focus {
+        outline: none;
+    }
+
+.valid {
+    font-family: 'Microsoft JhengHei UI';
+    /*margin-left: 1.4em;*/
+    font-size: 0.85em;
+}
+
+
+/*----------------------------------------------------------------------Popup css----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Popup css----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------Popup css----------------------------------------------------------------------------------*/
+
+
+#btnFAdminLogin {
+    position: absolute;
+    float: right;
+    top: 5em;
+    right: 15.5em;
+}
+
+#btnFStudentLogin {
+    position: absolute;
+    float: right;
+    top: 5em;
+    right: 4em;
+}
+
+#btnFLogin {
+    position: absolute;
+    float: left;
+    bottom: 10em;
+    left: 45.5em;
+}
+
+
+#tblFLogin {
+    position: absolute;
+    float: left;
+    top: 11em;
+    left: 28em;
+}
+
+#ti {
+    position: absolute;
+    float: left;
+    left: 8.6em;
+}
+
+.dl {
+    position: absolute;
+    float: left;
+    left: 3em;
+    height: 5.5em;
+    width: 5.5em;
+    outline: none;
+    top: 15px;
+}
+
+.faded {
+    position: absolute;
+    float: left;
+    top: 7em;
+    bottom: 4.3em;
+    left: 15em;
+    right: 15em;
+    height: 28.5em;
+    width: 54.925em;
+    border-radius: 3em;
+    background-color: rgba(255,255,255,0.5);
+    /*transition: opacity 1s ease;*/
+    visibility: hidden;
+    text-align: center;
+    text-justify: inter-word;
+    /*transition: box-shadow 0.5s ease;*/
+}
+    /*.faded:hover {
+        box-shadow: 1em 1em 0.5em rgba(255,255,255,0.2);
+    }*/
+.appear {
+    visibility: visible;
+    animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        height: 0em;
+        width: 0em;
+    }
+
+    20% {
+        opacity: 0.2;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    30% {
+        opacity: 0.3;
+        height: 22.5em;
+        width: 48.925em;
+    }
+
+    40% {
+        opacity: 0.4;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    50% {
+        opacity: 0.5;
+        height: 25.5em;
+        width: 51.925em;
+    }
+
+    60% {
+        opacity: 0.6;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    70% {
+        opacity: 0.7;
+        height: 26.5em;
+        width: 52.925em;
+    }
+
+    80% {
+        opacity: 0.8;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    90% {
+        opacity: 0.9;
+        height: 28.1em;
+        width: 54.58em;
+    }
+
+    100% {
+        opacity: 1;
+        height: 28.5em;
+        width: 54.925em;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        height: 0em;
+        width: 0em;
+    }
+
+    20% {
+        opacity: 0.2;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    30% {
+        opacity: 0.3;
+        height: 22.5em;
+        width: 48.925em;
+    }
+
+    40% {
+        opacity: 0.4;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    50% {
+        opacity: 0.5;
+        height: 25.5em;
+        width: 51.925em;
+    }
+
+    60% {
+        opacity: 0.6;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    70% {
+        opacity: 0.7;
+        height: 26.5em;
+        width: 52.925em;
+    }
+
+    80% {
+        opacity: 0.8;
+        height: 28.5em;
+        width: 54.925em;
+    }
+
+    90% {
+        opacity: 0.9;
+        height: 28.1em;
+        width: 54.58em;
+    }
+
+    100% {
+        opacity: 1;
+        height: 28.5em;
+        width: 54.925em;
+    }
+}
+
+.close {
+    position: absolute;
+    float: right;
+    top: 0.3em;
+    right: 0.8em;
+    font-size: 2em !important;
+    transition: color 1s ease;
+    color: rgba(0, 0, 0, 0.34);
+}
+
+    .close:hover {
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    .close:focus {
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+.popText {
+    position: absolute;
+    float: left;
+    left: 3.2em;
+    min-height: 1.5em;
+    padding: 0.35em;
+    border-radius: 0.7em;
+    outline: none;
+    border: 0.14em solid rgba(0,0,0,0);
+    background-color: rgba(255,255,255,1);
+    transition: border-color 1s ease;
+}
+
+    .popText:focus {
+        border-color: rgb(0, 255, 224);
+    }
+
+.v {
+    position: absolute;
+    float: left;
+    left: 25em;
+    font-size: 0.85em !important;
+    font-family: 'Microsoft JhengHei UI';
+}
+
+#txtE, #revE {
+    top: 1.5em;
+}
+
+#txtP, #revP {
+    top: 5em;
+}
+
+.li {
+    position: absolute;
+    float: left;
+    border: 0.2em solid rgb(0, 255, 224);
+    padding: 2.5em 1em;
+    font-size: 1.1em !important;
+    font-family: 'Microsoft JhengHei UI';
+    border-color: rgb(0, 255, 224);
+    color: rgb(0, 255, 224);
+    width: 8em;
+    text-decoration: none;
+    border-radius: 1.5em;
+    transition: background-color 1s ease;
+    background-color: white;
+    bottom: 3.5em;
+}
+
+    .li:hover {
+        background-color: rgb(0, 255, 224);
+        color: white;
+    }
+
+    .li:focus {
+        background-color: rgb(0, 255, 224);
+        color: white;
+    }
+
+#liAccepted {
+    left: 2em;
+}
+
+#liDeclined {
+    left: 19.8em;
+}
+
+#liBoth {
+    right: 2em;
+}
+
+
+.ddl {
+    position: absolute;
+    left: 3.2em;
+    font-family: 'Microsoft JhengHei UI';
+    color: rgb(95, 95, 95);
+    /*margin: 0.5em 0em 1.8em 0em;*/
+    /*margin-left: 0em;
+    margin-top: 2em;*/
+    padding: 0.6em 4em;
+    border-radius: 0.7em;
+    transition: border-color 1s ease;
+    border: 0.2em solid rgb(255, 255, 255);
+    background-color: rgba(139, 139, 139, 0.10) !important;
+}
+
+    .ddl:hover {
+        color: rgb(87, 82, 0);
+        background-color: rgba(87, 82, 0, 0.10);
+        border-color: rgb(0, 64, 57);
+    }
+
+    .ddl:focus {
+        color: rgb(0, 255, 224);
+        outline: none;
+        background-color: rgba(0, 255, 224, 1);
+        border-color: rgb(0, 255, 224);
+    }
+
+#ddlP {
+    top: 10em;
+}
+
+#btnGetProjects {
+    position: absolute;
+    float: left;
+    top:4.2em;
+    left: 43em;
+    font-size: 1em;
+    min-height: 0em;
+    padding: 0.6em 1em;
+    border-radius: 5em;
+    outline: none;
+    border: 0em solid rgba(0,0,0,0);
+    color: rgb(0, 255, 224);
+    transition: background-color 1s ease;
+    background-color: rgba(255,255,255,1);
+}
+    #btnGetProjects:hover {
+        background-color: rgb(0, 255, 224);
+        color: white;
+    }
+    #btnGetProjects:focus {
+        background-color: rgb(0, 255, 224);
+        color: white;
+    }

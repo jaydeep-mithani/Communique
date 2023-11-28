@@ -1,0 +1,40 @@
+﻿body {
+}
+.view {
+    color: white;
+    font-family: 'Microsoft JhengHei UI';
+    /*padding:3em;*/
+    /*height: 25em;
+    width: 84.3em;*/
+    width: 79em;
+    margin-left: 2.6em;
+    box-shadow: 0.2em 0.2em 0.5em rgba(0,0,0,0.4);
+    /*margin-top: 2em;
+    margin-left: 2em;
+    border:0em solid transparent;*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*border-left: 7em solid transparent;
+    border-color:transparent;*/
+}
+.con {
+    float:left;
+    margin-top: 5em;
+}
+.h {
+    padding: 2em;
+    background-color: rgb(255, 242, 0);
+    margin-left:2em;
+}
+.altR {
+    background-color: rgba(255, 242, 0, 0.4);
+}
+#data {
+    overflow-y: scroll;
+    position: absolute;
+    float:left;
+    bottom:7em;
+    top: 10em;
+}
+    #data::-webkit-scrollbar {
+        display: none;
+    }

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_Panel.Master.cs" Inherits="Communique.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Panel</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="Admin_panel_Master_Style.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mstAdmin" runat="server">
+        <header>
+            <ul>
+                <li><a href="Admin_Startup.aspx" id="seperate" style="padding:0px 0px;"><asp:Image ID="imgHome" runat="server" ImageUrl="Images/HomeWF.png" CssClass="homebtn" /></a></li>
+                <li><asp:Label ID="lblMstTitle" runat="server" Text="Communique"></asp:Label></li>
+<%--                <li><a  class="dropbtn">View users</a></li>--%>
+                <li class="dropdown">
+                    <a id="home" class="dropbtn"><i class="fa fa-pencil"></i> Edit user data</a>
+                    <div class="dropdown-content">
+                        <a href="Admin_Student_Select.aspx"><i class="fa fa-mortar-board"></i> Student</a>
+                        <a href="Admin_Faculty_Select.aspx"><i class="fa fa-institution"></i> Faculty</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn"><i class="fa fa-user-plus"></i> Add new user</a>
+                    <div class="dropdown-content">
+                        <a href="Admin_Student_Insert.aspx"><i class="fa fa-mortar-board"></i> Student</a>
+                        <a href="Admin_Faculty_Insert.aspx"><i class="fa fa-institution"></i> Faculty</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn"><i class="fa fa-users"></i> View user info</a>
+                    <div class="dropdown-content">
+                        <a href="Admin_fullRecord_Student.aspx"><i class="fa fa-mortar-board"></i> Student</a>
+                        <a href="Admin_fullRecord_Faculty.aspx"><i class="fa fa-institution"></i> Faculty</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn"><i class="fa fa-trash-o"></i> Remove user</a>
+                    <div class="dropdown-content">
+                        <a href="Admin_Student_Delete.aspx"><i class="fa fa-mortar-board"></i> Student</a>
+                        <a href="Admin_Faculty_Delete.aspx"><i class="fa fa-institution"></i> Faculty</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropbtn"><i class="fa fa-cogs"></i> Other</a>
+                    <div class="dropdown-content">
+                        <a href="Admin_Change_Password.aspx"><i class="fa fa-key"></i> Change Password</a>
+                        <a href="Admin_Technology_Insert.aspx"><i class="fa fa-plus"></i> Add new Technology</a>
+                        <a href="Admin_Technology_Delete.aspx"><i class="fa fa-remove"></i> Remove technology</a>
+                    </div>
+                </li>
+                <%--<li class="dropdown">
+                    <asp:Button CssClass="btn" ID="btnLogout" runat="server" Text="Logout" />
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Edit user info</a>
+                    <div class="dropdown-content">
+                        <a >Student</a>
+                        <a >Faculty</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a  class="dropbtn">Remove user</a>
+                    <div class="dropdown-content">
+                        <a >Student</a>
+                        <a >Faculty</a>
+                    </div>
+                </li>--%>
+            </ul>
+        </header>
+        <div >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <asp:Button ID="btnLogout" CausesValidation="false" CssClass="btnX" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+                <asp:Label Text="© Copyright 2020 Communique" ID="lblMstCopyright" runat="server"></asp:Label>
+<%--                <asp:Button CssClass="btn" ID="btnLogout" runat="server" Text="Logout" />--%>
+        </footer>
+    </form>
+</body>
+</html>
